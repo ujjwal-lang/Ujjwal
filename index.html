@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spyne Inventory Intelligence</title>
+<title>SourceIQ Inventory Intelligence</title>
 <style>
   :root{
     --bg:#eef1f6; --panel:#ffffff; --panel2:#f6f8fb; --line:#e4e8f0; --line2:#eef1f6;
@@ -375,7 +375,7 @@
 <div id="login">
   <div class="login-brand">
     <div class="lb-inner">
-      <div class="lb-logo"><div class="mk">S</div><div><b>Spyne</b><span>INVENTORY INTELLIGENCE</span></div></div>
+      <div class="lb-logo"><div class="mk">S</div><div><b>SourceIQ</b><span>INVENTORY INTELLIGENCE</span></div></div>
       <h2>Buy the right cars, at the right price — before your capital gets stuck.</h2>
       <div class="lp">Dealer-specific intelligence that tells you which vehicles to acquire, the most to pay, and what to do when a unit starts to age.</div>
       <ul class="lb-points">
@@ -398,11 +398,11 @@
         <label>Email</label>
         <input id="loginEmail" type="email" placeholder="you@dealership.com" value="manager@desertridge.com" onkeydown="if(event.key==='Enter')login()">
         <label>Password</label>
-        <input id="loginPass" type="password" placeholder="••••••••" value="spyne2026" onkeydown="if(event.key==='Enter')login()">
+        <input id="loginPass" type="password" placeholder="••••••••" value="SourceIQ2026" onkeydown="if(event.key==='Enter')login()">
         <div class="loginerr" id="loginErr"></div>
         <button onclick="login()">Sign in →</button>
       </div>
-      <div class="creds" id="credHint">Manager demo &nbsp;·&nbsp; <b>manager@desertridge.com</b> &nbsp;/&nbsp; <b>spyne2026</b></div>
+      <div class="creds" id="credHint">Manager demo &nbsp;·&nbsp; <b>manager@desertridge.com</b> &nbsp;/&nbsp; <b>SourceIQ2026</b></div>
     </div>
   </div>
 </div>
@@ -411,7 +411,7 @@
 <div id="app">
   <div class="topbar">
     <div class="mk">S</div>
-    <div><b>Spyne</b><span class="tag">INVENTORY INTELLIGENCE</span></div>
+    <div><b>SourceIQ</b><span class="tag">INVENTORY INTELLIGENCE</span></div>
     <div class="sp"></div>
     <div class="brief" onclick="openBriefing()"><span class="ai-dot"></span>AI Assistant</div>
     <div class="dealer"><div class="av">MR</div><div><b>Mike Reynolds</b><span>Used-Car Manager</span></div></div>
@@ -427,7 +427,7 @@
 <div id="principal">
   <div class="topbar">
     <div class="mk">S</div>
-    <div><b>Spyne</b><span class="tag">PRINCIPAL DASHBOARD</span></div>
+    <div><b>SourceIQ</b><span class="tag">PRINCIPAL DASHBOARD</span></div>
     <div class="sp"></div>
     <div class="dealer"><div class="av">DM</div><div><b>Dana Meridian</b><span>Dealer Principal</span></div></div>
     <button class="logout" onclick="principalLogout()" title="Log out"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>Log out</button>
@@ -1418,7 +1418,7 @@ function openCompare(){
  
 /* ================= UTIL ================= */
 let toastT; function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2000);}
-const CREDS={ manager:{email:'manager@desertridge.com',pass:'spyne2026'}, principal:{email:'principal@desertridge.com',pass:'spyne2026'} };
+const CREDS={ manager:{email:'manager@desertridge.com',pass:'SourceIQ2026'}, principal:{email:'principal@desertridge.com',pass:'SourceIQ2026'} };
 let loginRole='manager';
 function switchLoginTab(role){ loginRole=role;
   document.getElementById('loginEmail').value=CREDS[role].email;
@@ -1426,8 +1426,8 @@ function switchLoginTab(role){ loginRole=role;
   const err=document.getElementById('loginErr'); if(err)err.style.display='none';
   document.querySelectorAll('.ltab').forEach(b=>b.classList.toggle('on', b.dataset.role===role));
   document.getElementById('credHint').innerHTML = role==='manager'
-    ? 'Manager demo &nbsp;·&nbsp; <b>manager@desertridge.com</b> &nbsp;/&nbsp; <b>spyne2026</b>'
-    : 'Principal demo &nbsp;·&nbsp; <b>principal@desertridge.com</b> &nbsp;/&nbsp; <b>spyne2026</b>';
+    ? 'Manager demo &nbsp;·&nbsp; <b>manager@desertridge.com</b> &nbsp;/&nbsp; <b>SourceIQ2026</b>'
+    : 'Principal demo &nbsp;·&nbsp; <b>principal@desertridge.com</b> &nbsp;/&nbsp; <b>SourceIQ2026</b>';
 }
 function login(){
   const e=document.getElementById('loginEmail').value.trim().toLowerCase();
