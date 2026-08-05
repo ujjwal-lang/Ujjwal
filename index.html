@@ -744,11 +744,6 @@ function viewDashboard(){
     <div class="kpi"><div class="l">Gross profit / unit</div><div class="v">$4,120</div><div class="d up">▲ 12% since rollout</div></div>
   </div>
  
-  <div class="card brief-card pad" style="margin-top:16px">
-    <div class="subh"><span class="ai-dot"></span> Today's AI briefing</div>
-    <p>${aiBriefing().split('\n\n').join('</p><p>')}</p>
-  </div>
- 
   <div class="sec-h"><h2>Where to act today</h2></div>
   <div class="act3">
     <div class="act" onclick="go('opportunities')"><div class="top"><span class="dot" style="background:var(--green)"></span><span class="l">Recommended purchases</span></div><div class="n" style="color:var(--green)">${buys.length}</div><div class="go">Review opportunities →</div></div>
