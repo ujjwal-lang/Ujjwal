@@ -50,6 +50,10 @@ They need to balance:
 * Capital utilization
 * Risk
 
+Secondary user-
+* Dealer Principal- They are the ones who monitor the performance of business and managers.
+
+
 ---
 
 ## User Pain Point
