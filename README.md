@@ -1,4 +1,4 @@
-# SoruceIQ — Used Car Inventory Intelligence
+# SourceIQ — Used Car Inventory Intelligence
 
 ## Overview
 
