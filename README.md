@@ -1,4 +1,4 @@
-# Spyne — Used Car Inventory Intelligence
+# SoruceIQ — Used Car Inventory Intelligence
 
 ## Overview
 
